@@ -1,0 +1,112 @@
+function func(){
+	if(temp==rez){
+		alert('ещё по одной...');
+	}
+	else
+		{
+		alert('Хватит с тебя');
+		break;
+	}
+}
+
+
+while(true){
+let ch1 = Math.random();
+let ch2 = Math.random();
+let oper = Math.random();
+let rez;
+let temp;
+if(ch1<=0.5){
+	ch1=ch1*(-10);
+	ch1=Math.round(ch1);
+}
+if(ch1>0.5){
+	ch1=ch1*(10);
+	ch1=Math.round(ch1);
+}
+if(ch2<=0.5){
+	ch2=ch2*(-10);
+	ch2=Math.round(ch2);
+}
+if(ch2>0.5){
+	ch2=ch2*(10);
+	ch2=Math.round(ch2);
+
+}	
+if(oper>=0 && oper<=0.25){
+	rez=ch1+ch2;
+	rez=Math.round(rez);
+	//temp=rez;
+	temp = prompt(ch1+'+'+ch2+'=');
+	if(temp==rez){
+		alert('ещё по одной...');
+	}
+	else
+		{
+		alert('Хватит с тебя');
+		break;
+	}
+}
+if(oper>0.25 && oper<=0.5){
+	rez=ch1-ch2;
+	rez=Math.round(rez);
+	//temp=rez;
+	temp = prompt(ch1+'-'+ch2+'=');
+	if(temp==rez){
+		alert('ещё по одной...');
+	}
+	else
+		{
+		alert('Хватит с тебя');
+		break;
+	}
+	alert(ch1+'-'+ch2+'='+rez);
+}
+if(oper>0.5 && oper<=0.75){
+	rez=ch1*ch2;
+	rez=Math.round(rez);
+	//temp=rez;
+	temp = prompt(ch1+'*'+ch2+'=');
+	if(temp==rez){
+		alert('ещё по одной...');
+	}
+	else
+		{
+		alert('Хватит с тебя');
+		break;
+	}
+	//alert(ch1+'*'+ch2+'='+rez);
+}
+if(oper>0.75 && oper<=1){
+	rez=ch1/ch2;
+	rez=Math.round(rez);
+	//temp=rez;
+	temp = prompt(ch1+'/'+ch2+'=');
+	if(temp==rez){
+		alert('ещё по одной...');
+	}
+	else
+		{
+		alert('Хватит с тебя');
+		break;
+	}
+	//alert(ch1+'/'+ch2+'='+rez);
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
