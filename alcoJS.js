@@ -20,6 +20,7 @@ function getOperator(oper, ch2) {
       break;
   }
 }
+
 function checkNumber(ch2, oper) {
   if (oper == 0 && ch2 < 0) {
     return ch2;
@@ -32,17 +33,18 @@ function checkNumber(ch2, oper) {
   }
   return ch2;
 }
+
 function randomOperator() {
-  return Math.floor(Math.random()*4);
+  return Math.floor(Math.random() * 4);
 }
 
 function getResult(ch1, ch2, oper) {
   switch (oper) {
     case 0: 
-      return rez = Math.floor(ch1 + ch2); 
+      return rez = ch1 + ch2; 
       break;
     case 1:
-      return rez = Math.floor(ch1 - ch2); 
+      return rez = ch1 - ch2; 
       break;
     case 2: 
       return rez = ch1 * ch2;
