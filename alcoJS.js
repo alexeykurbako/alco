@@ -41,16 +41,16 @@ function randomOperator() {
 function getResult(ch1, ch2, oper) {
   switch (oper) {
     case 0: 
-      return rez = ch1 + ch2; 
+      return ch1 + ch2; 
       break;
     case 1:
-      return rez = ch1 - ch2; 
+      return ch1 - ch2; 
       break;
     case 2: 
-      return rez = ch1 * ch2;
+      return ch1 * ch2;
       break;
     case 3:
-      return rez = Math.floor((ch1 / ch2) * 10) / 10; break;
+      return Math.floor((ch1 / ch2) * 10) / 10; break;
   }
 }
 
